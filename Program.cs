@@ -130,7 +130,7 @@ namespace Assignment_Session02_OOP
 
             //======================================================================
             //b) Can a static method inside `Order` access the `Item` field directly? Why or why not?
-             
+
             //Answer
 
             //  A static method belongs to the class, not to an object.
@@ -145,6 +145,59 @@ namespace Assignment_Session02_OOP
 
 
             #endregion
+
+            #region Part02
+            //Cinema cinema = new Cinema();
+
+            //// Input 3 tickets
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine($"Enter details for Ticket {i + 1}:");
+
+            //    Console.Write("Movie Name: ");
+            //    string movieName = Console.ReadLine();
+
+            //    Console.Write("Ticket Type (Regular/VIP/Student): ");
+            //    TicketType type = Enum.Parse<TicketType>(Console.ReadLine(), true);
+
+            //    Console.Write("Seat Row: ");
+            //    int row = int.Parse(Console.ReadLine());
+
+            //    Console.Write("Seat Number: ");
+            //    int number = int.Parse(Console.ReadLine());
+
+            //    Console.Write("Price: ");
+            //    double price = double.Parse(Console.ReadLine());
+
+            //    Ticket t = new Ticket(movieName, type, new SeatLocation(row, number), price);
+            //    cinema.AddTicket(t);
+            //}
+
+            //// Print tickets
+            //Console.WriteLine("\n--- Tickets ---");
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine(cinema[i]);
+            //}
+
+            //// Search by movie name
+            //Console.Write("\nEnter movie name to search: ");
+            //string searchName = Console.ReadLine();
+            //Ticket found = cinema.GetMovieByName(searchName);
+            //Console.WriteLine(found != null ? found.ToString() : "Movie not found.");
+
+            //// Total tickets sold
+            //Console.WriteLine($"\nTotal Tickets Sold: {Ticket.GetTotalTicketsSold()}");
+
+            //// Booking references
+            //Console.WriteLine($"Booking Ref 1: {BookingHelper.GenerateBookingReference()}");
+            //Console.WriteLine($"Booking Ref 2: {BookingHelper.GenerateBookingReference()}");
+
+            //// Group discount
+            //double discountPrice = BookingHelper.CalcGroupDiscount(5, 80);
+            //Console.WriteLine($"\nGroup Discount Price (5 tickets at 80 EGP): {discountPrice}");
+            #endregion
         }
     }
-}
+}   
+
